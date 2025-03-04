@@ -20,7 +20,7 @@ function updateClock() {
     horElement.style.transform = `rotate(${hDeg}deg)`
 }
 
-const formatTime = (time) => time < 10 ? '0' + time : time 
+const formatTime = (time) => time < 10 ? `0`+time : time
 
 setInterval(updateClock, 1000)
 updateClock()
